@@ -1,0 +1,12 @@
+EN multiplexer NULL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd sub00/vhpl00 1629294685
+EN seg_display NULL C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd sub00/vhpl10 1629294695
+EN clock_divider250hz NULL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd sub00/vhpl06 1629294691
+EN decoder_anode NULL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd sub00/vhpl08 1629294693
+AR two_bit_counter behavioral C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd sub00/vhpl05 1629294690
+AR multiplexer behavioral C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd sub00/vhpl01 1629294686
+EN two_bit_counter NULL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd sub00/vhpl04 1629294689
+AR a_to_g behavioral C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd sub00/vhpl03 1629294688
+EN a_to_g NULL C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd sub00/vhpl02 1629294687
+AR seg_display behavioral C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd sub00/vhpl11 1629294696
+AR decoder_anode behavioral C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd sub00/vhpl09 1629294694
+AR clock_divider250hz behavioral C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd sub00/vhpl07 1629294692

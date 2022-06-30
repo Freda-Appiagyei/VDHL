@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.xst" -ofn "C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.syr" 

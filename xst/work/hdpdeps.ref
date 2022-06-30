@@ -1,0 +1,45 @@
+V3 23
+FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd 2021/08/18.13:33:56 P.20131013
+EN work/A_to_G 1629294687 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/A_to_G/Behavioral 1629294688 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd EN work/A_to_G 1629294687
+FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd 2021/08/18.13:07:28 P.20131013
+EN work/Clock_divider250Hz 1629294691 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Clock_divider250Hz/Behavioral 1629294692 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd \
+      EN work/Clock_divider250Hz 1629294691
+FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd 2021/08/18.13:01:36 P.20131013
+EN work/Decoder_Anode 1629294693 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Decoder_Anode/Behavioral 1629294694 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd \
+      EN work/Decoder_Anode 1629294693
+FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd 2021/08/18.13:31:11 P.20131013
+EN work/Multiplexer 1629294685 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/Multiplexer/Behavioral 1629294686 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd \
+      EN work/Multiplexer 1629294685
+FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd 2021/08/18.13:48:52 P.20131013
+EN work/SEG_DISPLAY 1629294695 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SEG_DISPLAY/Behavioral 1629294696 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd \
+      EN work/SEG_DISPLAY 1629294695 CP Multiplexer CP A_to_G CP Two_bit_counter \
+      CP Clock_divider250Hz CP Decoder_Anode
+FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd 2021/08/18.13:08:12 P.20131013
+EN work/Two_bit_counter 1629294689 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Two_bit_counter/Behavioral 1629294690 \
+      FL C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd \
+      EN work/Two_bit_counter 1629294689

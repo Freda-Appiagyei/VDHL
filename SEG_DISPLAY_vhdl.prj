@@ -1,0 +1,6 @@
+vhdl work "C:\Users\Dell\Documents\dc\dcd\Seven_segment\Two_bit_counter.vhd"
+vhdl work "C:\Users\Dell\Documents\dc\dcd\Seven_segment\Multiplexer.vhd"
+vhdl work "C:\Users\Dell\Documents\dc\dcd\Seven_segment\Decoder_Anode.vhd"
+vhdl work "C:\Users\Dell\Documents\dc\dcd\Seven_segment\Clock_divider250Hz.vhd"
+vhdl work "C:\Users\Dell\Documents\dc\dcd\Seven_segment\A_to_G.vhd"
+vhdl work "C:\Users\Dell\Documents\dc\dcd\Seven_segment\SEG_DISPLAY.vhd"

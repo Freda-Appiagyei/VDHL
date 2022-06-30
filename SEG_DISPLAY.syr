@@ -1,0 +1,489 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: SEG_DISPLAY.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SEG_DISPLAY.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SEG_DISPLAY"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : SEG_DISPLAY
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd" in Library work.
+Entity <Multiplexer> compiled.
+Entity <Multiplexer> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd" in Library work.
+Entity <A_to_G> compiled.
+Entity <A_to_G> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd" in Library work.
+Entity <Two_bit_counter> compiled.
+Entity <Two_bit_counter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd" in Library work.
+Entity <Clock_divider250Hz> compiled.
+Entity <Clock_divider250Hz> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd" in Library work.
+Entity <Decoder_Anode> compiled.
+Entity <Decoder_Anode> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd" in Library work.
+Entity <SEG_DISPLAY> compiled.
+Entity <SEG_DISPLAY> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SEG_DISPLAY> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Multiplexer> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <A_to_G> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Two_bit_counter> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Clock_divider250Hz> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Decoder_Anode> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <SEG_DISPLAY> in library <work> (Architecture <Behavioral>).
+Entity <SEG_DISPLAY> analyzed. Unit <SEG_DISPLAY> generated.
+
+Analyzing Entity <Multiplexer> in library <work> (Architecture <Behavioral>).
+Entity <Multiplexer> analyzed. Unit <Multiplexer> generated.
+
+Analyzing Entity <A_to_G> in library <work> (Architecture <Behavioral>).
+Entity <A_to_G> analyzed. Unit <A_to_G> generated.
+
+Analyzing Entity <Two_bit_counter> in library <work> (Architecture <Behavioral>).
+Entity <Two_bit_counter> analyzed. Unit <Two_bit_counter> generated.
+
+Analyzing Entity <Clock_divider250Hz> in library <work> (Architecture <Behavioral>).
+Entity <Clock_divider250Hz> analyzed. Unit <Clock_divider250Hz> generated.
+
+Analyzing Entity <Decoder_Anode> in library <work> (Architecture <Behavioral>).
+Entity <Decoder_Anode> analyzed. Unit <Decoder_Anode> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Multiplexer>.
+    Related source file is "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Multiplexer.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <Muxoutput>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Multiplexer> synthesized.
+
+
+Synthesizing Unit <A_to_G>.
+    Related source file is "C:/Users/Dell/Documents/dc/dcd/Seven_segment/A_to_G.vhd".
+    Found 16x7-bit ROM for signal <S_A_G>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <A_to_G> synthesized.
+
+
+Synthesizing Unit <Two_bit_counter>.
+    Related source file is "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Two_bit_counter.vhd".
+    Found 2-bit up counter for signal <countsig>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Two_bit_counter> synthesized.
+
+
+Synthesizing Unit <Clock_divider250Hz>.
+    Related source file is "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Clock_divider250Hz.vhd".
+    Found 18-bit up counter for signal <sig>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Clock_divider250Hz> synthesized.
+
+
+Synthesizing Unit <Decoder_Anode>.
+    Related source file is "C:/Users/Dell/Documents/dc/dcd/Seven_segment/Decoder_Anode.vhd".
+    Found 4x4-bit ROM for signal <Anode_output>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Decoder_Anode> synthesized.
+
+
+Synthesizing Unit <SEG_DISPLAY>.
+    Related source file is "C:/Users/Dell/Documents/dc/dcd/Seven_segment/SEG_DISPLAY.vhd".
+Unit <SEG_DISPLAY> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x4-bit ROM                                           : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SEG_DISPLAY> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SEG_DISPLAY, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SEG_DISPLAY.ngr
+Top Level Output File Name         : SEG_DISPLAY
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 28
+
+Cell Usage :
+# BELS                             : 79
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 17
+#      LUT2                        : 5
+#      LUT3                        : 8
+#      LUT4                        : 7
+#      MUXCY                       : 17
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 20
+#      FD                          : 19
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 16
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       20  out of   1920     1%  
+ Number of Slice Flip Flops:             20  out of   3840     0%  
+ Number of 4 input LUTs:                 38  out of   3840     0%  
+ Number of IOs:                          28
+ Number of bonded IOBs:                  28  out of    173    16%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)    | Load  |
+-----------------------------------+--------------------------+-------+
+clk                                | BUFGP                    | 18    |
+Clkdivider/sig_17                  | NONE(counter1/countsig_1)| 2     |
+-----------------------------------+--------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.978ns (Maximum Frequency: 200.884MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 11.558ns
+   Maximum combinational path delay: 11.129ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.978ns (frequency: 200.884MHz)
+  Total number of paths / destination ports: 171 / 18
+-------------------------------------------------------------------------
+Delay:               4.978ns (Levels of Logic = 18)
+  Source:            Clkdivider/sig_1 (FF)
+  Destination:       Clkdivider/sig_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Clkdivider/sig_1 to Clkdivider/sig_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.720   1.140  Clkdivider/sig_1 (Clkdivider/sig_1)
+     LUT1:I0->O            1   0.551   0.000  Clkdivider/Mcount_sig_cy<1>_rt (Clkdivider/Mcount_sig_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  Clkdivider/Mcount_sig_cy<1> (Clkdivider/Mcount_sig_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<2> (Clkdivider/Mcount_sig_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<3> (Clkdivider/Mcount_sig_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<4> (Clkdivider/Mcount_sig_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<5> (Clkdivider/Mcount_sig_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<6> (Clkdivider/Mcount_sig_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<7> (Clkdivider/Mcount_sig_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<8> (Clkdivider/Mcount_sig_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<9> (Clkdivider/Mcount_sig_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<10> (Clkdivider/Mcount_sig_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<11> (Clkdivider/Mcount_sig_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<12> (Clkdivider/Mcount_sig_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<13> (Clkdivider/Mcount_sig_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<14> (Clkdivider/Mcount_sig_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Clkdivider/Mcount_sig_cy<15> (Clkdivider/Mcount_sig_cy<15>)
+     MUXCY:CI->O           0   0.064   0.000  Clkdivider/Mcount_sig_cy<16> (Clkdivider/Mcount_sig_cy<16>)
+     XORCY:CI->O           1   0.904   0.000  Clkdivider/Mcount_sig_xor<17> (Result<17>)
+     FD:D                      0.203          Clkdivider/sig_17
+    ----------------------------------------
+    Total                      4.978ns (3.838ns logic, 1.140ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clkdivider/sig_17'
+  Clock period: 2.937ns (frequency: 340.483MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.937ns (Levels of Logic = 1)
+  Source:            counter1/countsig_1 (FF)
+  Destination:       counter1/countsig_1 (FF)
+  Source Clock:      Clkdivider/sig_17 rising
+  Destination Clock: Clkdivider/sig_17 rising
+
+  Data Path: counter1/countsig_1 to counter1/countsig_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.720   1.463  counter1/countsig_1 (counter1/countsig_1)
+     LUT2:I0->O            1   0.551   0.000  counter1/Mcount_countsig_xor<1>11 (Result<1>1)
+     FD:D                      0.203          counter1/countsig_1
+    ----------------------------------------
+    Total                      2.937ns (1.474ns logic, 1.463ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clkdivider/sig_17'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              11.558ns (Levels of Logic = 4)
+  Source:            counter1/countsig_0 (FF)
+  Destination:       ssdec<6> (PAD)
+  Source Clock:      Clkdivider/sig_17 rising
+
+  Data Path: counter1/countsig_0 to ssdec<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.720   1.526  counter1/countsig_0 (counter1/countsig_0)
+     LUT3:I0->O            1   0.551   0.000  mux1/Mmux_Muxoutput_3 (mux1/Mmux_Muxoutput_3)
+     MUXF5:I1->O           7   0.360   1.405  mux1/Mmux_Muxoutput_2_f5 (muxout<0>)
+     LUT4:I0->O            1   0.551   0.801  Segdecoder/Mrom_S_A_G31 (ssdec_3_OBUF)
+     OBUF:I->O                 5.644          ssdec_3_OBUF (ssdec<3>)
+    ----------------------------------------
+    Total                     11.558ns (7.826ns logic, 3.732ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Delay:               11.129ns (Levels of Logic = 5)
+  Source:            Input1<5> (PAD)
+  Destination:       ssdec<6> (PAD)
+
+  Data Path: Input1<5> to ssdec<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.996  Input1_5_IBUF (Input1_5_IBUF)
+     LUT3:I1->O            1   0.551   0.000  mux1/Mmux_Muxoutput_41 (mux1/Mmux_Muxoutput_41)
+     MUXF5:I0->O           7   0.360   1.405  mux1/Mmux_Muxoutput_2_f5_0 (muxout<1>)
+     LUT4:I0->O            1   0.551   0.801  Segdecoder/Mrom_S_A_G61 (ssdec_6_OBUF)
+     OBUF:I->O                 5.644          ssdec_6_OBUF (ssdec<6>)
+    ----------------------------------------
+    Total                     11.129ns (7.927ns logic, 3.202ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.76 secs
+ 
+--> 
+
+Total memory usage is 230620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

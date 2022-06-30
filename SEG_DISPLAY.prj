@@ -1,0 +1,6 @@
+vhdl work "Two_bit_counter.vhd"
+vhdl work "Multiplexer.vhd"
+vhdl work "Decoder_Anode.vhd"
+vhdl work "Clock_divider250Hz.vhd"
+vhdl work "A_to_G.vhd"
+vhdl work "SEG_DISPLAY.vhd"
